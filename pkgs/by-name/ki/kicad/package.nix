@@ -264,8 +264,8 @@ stdenv.mkDerivation rec {
       "--prefix GIO_EXTRA_MODULES : ${dconf}/lib/gio/modules"
       # required to open a bug report link in firefox-wayland
       "--set-default MOZ_DBUS_REMOTE 1"
-      "--set-default KICAD10_FOOTPRINT_DIR ${footprints}/share/kicad/footprints"
-      "--set-default KICAD10_SYMBOL_DIR ${symbols}/share/kicad/symbols"
+      "--set-default KICAD10_FOOTPRINT_DIR ${footprints}/share/kicad/template/fp-lib-table"
+      "--set-default KICAD10_SYMBOL_DIR ${symbols}/share/kicad/template/sym-lib-table"
       "--set-default KICAD10_TEMPLATE_DIR ${template_dir}"
       "--set-default NIX_KICAD10_STOCK_DATA_PATH ${stockDataPath}"
     ]
